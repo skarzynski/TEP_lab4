@@ -16,7 +16,7 @@ int main()
 	vector.push_back("qqq");
 	vector.push_back("www");
 	vector.push_back("eee");
-	//fle->openFile("test");
+	//fle.openFile("test");
 	//fle.printLine("rrr");
 	fle.printManyLines(vector);
 	printf("%d \n",fle.getLastError());
@@ -32,6 +32,10 @@ int main()
 	//cout << fec.printLine("rrr") << endl;
 	printf("%d \n", fec.printManyLines(vector));
 	//cout << fec.printManyLines(vector) << endl;
+
+	fle.tryOpen10("test3");
+	fte.tryOpen10("test");
+	fec.tryOpen10("test2");
 }
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
