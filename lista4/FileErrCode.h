@@ -13,7 +13,7 @@ private:
 
 public:
 	FileErrCode();      //konstruktor bezparametrowy
-	FileErrCode(string fileName); //konstruktor otwieraj¹cy plik
+	FileErrCode(string fileName, bool &result); //konstruktor otwieraj¹cy plik
 	~FileErrCode();               //destruktor
 
 	bool openFile(string fileName); //otwiera plik

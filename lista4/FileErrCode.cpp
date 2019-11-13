@@ -5,11 +5,12 @@ FileErrCode::FileErrCode() {
 	this->file = nullptr;
 }
 
-FileErrCode::FileErrCode(string fileName) {
+FileErrCode::FileErrCode(string fileName, bool &result) {
 	this->file = fopen(fileName.c_str(), "w+");
 	if (this->file == nullptr) {
-		//TODO: implement
+		result = false;
 	}
+	result = true;
 }
 
 FileErrCode::~FileErrCode() {

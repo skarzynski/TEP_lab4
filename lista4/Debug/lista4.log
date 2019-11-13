@@ -1,2 +1,4 @@
-﻿  lista4.cpp
+﻿  Zakres.cpp
+c:\xampp\htdocs\tep_lab4\lista4\zakres.cpp(21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+c:\xampp\htdocs\tep_lab4\lista4\zakres.cpp(70): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
   lista4.vcxproj -> C:\xampp\htdocs\TEP_lab4\Debug\lista4.exe

@@ -6,11 +6,14 @@
 #include "FileLastError.h"
 #include "FileThrowEx.h"
 #include "FileErrCode.h"
+#include "Zakres.h"
 
 using namespace std;
 
 int main()
 {
+	bool result;
+
 	FileLastError fle("test");
 	vector<string> vector;
 	vector.push_back("qqq");
@@ -27,7 +30,8 @@ int main()
 	//fte.printLine("rrr");
 	fte.printManyLines(vector);
 
-	FileErrCode fec("test3");
+	FileErrCode fec("test3", result);
+	printf("%d \n", result);
 	//fec.openFile("test3");
 	//cout << fec.printLine("rrr") << endl;
 	printf("%d \n", fec.printManyLines(vector));
@@ -36,6 +40,19 @@ int main()
 	fle.tryOpen10("test3");
 	fte.tryOpen10("test");
 	fec.tryOpen10("test2");
+
+	Zakres zakres1("123", 2, 124);
+	printf("%d \n", zakres1.getValue());
+
+	const char* str = "123";
+	Zakres zakres2(str, 2, 124);
+	printf("%d \n", zakres2.getValue());
+
+	Zakres zakres3 = zakres1;
+	printf("%d \n", zakres3.getValue());
+
+	zakres3 = "111";
+	printf("%d \n", zakres3.getValue());
 }
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
