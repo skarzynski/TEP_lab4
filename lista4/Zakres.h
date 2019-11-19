@@ -16,7 +16,7 @@ private:
 	int value;				//wartość obiektu klasy
 	
 public:
-	static bool getLastError() { return(lastError); }						//zwraca czy ostatnia operacja się powiodła
+	static bool getLastError();					//zwraca czy ostatnia operacja się powiodła
 
 
 	Zakres();				//konstruktor  bezparametrowy

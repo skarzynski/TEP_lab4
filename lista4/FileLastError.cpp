@@ -3,6 +3,10 @@
 
 bool FileLastError::lastError;
 
+bool FileLastError::getLastError() {
+	return FileLastError::lastError;
+}
+
 FileLastError::FileLastError() {
 	this->file = nullptr;
 	lastError = false;

@@ -15,7 +15,7 @@ private:
 	FILE* file;     //wskaŸnik na plik
 
 public:
-	static bool getLastError() { return(lastError); }                //zwraca czy ostatnia operacja siê powiod³a
+	static bool getLastError();         //zwraca czy ostatnia operacja siê powiod³a
 
 	FileLastError();                    //konstruktor bezparametrowy
 	FileLastError(string fileName);     //konstruktor otwieraj¹cy plik

@@ -7,6 +7,10 @@ using namespace std;
 
 bool Zakres::lastError;
 
+bool Zakres::getLastError() {
+	return Zakres::lastError;
+}
+
 Zakres::Zakres() {
 	this->from = -1;
 	this->to = -1;

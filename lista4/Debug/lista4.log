@@ -1,4 +1,8 @@
-﻿  Zakres.cpp
-c:\xampp\htdocs\tep_lab4\lista4\zakres.cpp(21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-c:\xampp\htdocs\tep_lab4\lista4\zakres.cpp(70): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+﻿  FileLastError.cpp
+c:\xampp\htdocs\tep_lab4\lista4\filelasterror.cpp(56): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  Zakres.cpp
+c:\xampp\htdocs\tep_lab4\lista4\zakres.cpp(25): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+c:\xampp\htdocs\tep_lab4\lista4\zakres.cpp(74): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  lista4.cpp
+  Generowanie kodu...
   lista4.vcxproj -> C:\xampp\htdocs\TEP_lab4\Debug\lista4.exe
