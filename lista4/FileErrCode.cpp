@@ -20,6 +20,9 @@ FileErrCode::~FileErrCode() {
 }
 
 bool FileErrCode::openFile(string fileName) {
+	if (this->file != nullptr) {
+		return false;
+	}
 	this->file = fopen(fileName.c_str(), "w+");
 	if (this->file == nullptr) {
 		return false;

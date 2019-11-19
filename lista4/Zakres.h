@@ -19,7 +19,7 @@ public:
 	static bool getLastError();					//zwraca czy ostatnia operacja się powiodła
 
 
-	Zakres();				//konstruktor  bezparametrowy
+	Zakres();									//konstruktor  bezparametrowy
 	Zakres(string value, int from, int to);		//konstruktor próbujący przekonwertować ciąg znaków na l. całkowitą
 	Zakres(char* value, int from, int to);		//konstruktor próbujący przekonwertować ciąg znaków (przekazany za pomocą wskaźnika) na l. całkowitą
 

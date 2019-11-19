@@ -29,6 +29,10 @@ FileLastError::~FileLastError() {
 
 void FileLastError::openFile(string fileName) {
 	lastError = false;
+	if (this->file != nullptr) {
+		lastError = true;
+		return;
+	}
 	this->file = fopen(fileName.c_str(), "w+");
 	if (this->file == nullptr) {
 		lastError = true;

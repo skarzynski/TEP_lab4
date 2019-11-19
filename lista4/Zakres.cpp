@@ -71,6 +71,7 @@ int Zakres::getValue() {
 
 
 Zakres & Zakres::operator=(const string &newValue) {
+	lastError = false;
 	for (int i = 0; i < newValue.length(); i++) {
 		if (!isdigit(newValue[i])) {
 			lastError = true;

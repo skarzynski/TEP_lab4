@@ -23,6 +23,9 @@ FileThrowEx::~FileThrowEx() {
 }
 
 void FileThrowEx::openFile(string fileName) {
+	if (this->file != nullptr) {
+		throw 1;
+	}
 	this->file = fopen(fileName.c_str(), "w+");
 	if (this->file == nullptr) {
 		throw 1;
